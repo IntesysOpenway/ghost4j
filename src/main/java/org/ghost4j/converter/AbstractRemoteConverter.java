@@ -103,7 +103,7 @@ public abstract class AbstractRemoteConverter extends AbstractRemoteComponent
 
 	    // set JVM Xmx parameter according to the document size
 	    int documentMbSize = (document.getSize() / 1024 / 1024) + 1;
-	    int xmxValue = 64 + documentMbSize;
+		int xmxValue = 128 + documentMbSize;
 	    fork.setXmx(xmxValue + "m");
 
 	    int cajoPort = 0;
